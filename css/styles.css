@@ -1,0 +1,61 @@
+body{
+    color: #34445e;
+}
+
+.inner-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 2.25rem;
+}
+
+/*            Header          */
+
+header{
+    background-color: gainsboro;
+    box-shadow: 0 0 7px 10px lightgrey;
+    padding: 0.625rem;
+    text-align: center;
+}
+
+header a{
+    color: #34445e;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+}
+
+/* Media queries always come at the bottom after the generic css*/
+
+@media screen and (min-width: 900px){
+    .inner-container{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 2%;
+    }
+
+    header ul{
+        display: flex;
+        gap: 1rem;
+    }
+
+    ul{
+
+        margin-bottom: 0px;
+    }
+
+    section{
+        width: calc(96%/3);
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .inner-container{
+        padding: 0;
+    }
+}
